@@ -9,6 +9,10 @@ app = Flask(__name__)
 from coach import coach
 app.register_blueprint(coach)
 
+# Workout videos for the Fitness screen (/videos), from the YouTube Data API
+from videos import videos
+app.register_blueprint(videos)
+
 def predict_exercise_intensity(user_input):
     # Load the trained model
     with open('kitale_model.pkl', 'rb') as file:
