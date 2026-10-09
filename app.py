@@ -5,6 +5,10 @@ import numpy as np
 
 app = Flask(__name__)
 
+# AI coach chat (/chat), powered by Groq
+from coach import coach
+app.register_blueprint(coach)
+
 def predict_exercise_intensity(user_input):
     # Load the trained model
     with open('kitale_model.pkl', 'rb') as file:
