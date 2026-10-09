@@ -17,7 +17,7 @@ coach = Blueprint("coach", __name__)
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 # Change on Render (GROQ_MODEL) if Groq retires this model; see console.groq.com/docs/models
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 FIREBASE_PROJECT_ID = os.environ.get("FIREBASE_PROJECT_ID", "accers-71aca")
 
 MAX_HISTORY = 12          # messages of conversation sent to the model
