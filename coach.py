@@ -51,7 +51,7 @@ line (the app performs it and hides the tag). Use at most one tag.
 [[ACTION:start_workout:<Activity>]] - start tracking; Activity is one of Walking, Brisk walking,
   Running, Jogging, Cycling, Hiking, HIIT, Strength training, Yoga, Stretching, Skipping rope
 [[ACTION:pause_workout]]  [[ACTION:resume_workout]]  [[ACTION:finish_workout]]
-[[ACTION:open:<screen>]] - screen is one of workout_log, track, achievements, profile, reminders, graphs
+[[ACTION:open:<screen>]] - screen is one of workout_log, track, achievements, together, music, profile, reminders, graphs
 """
 
 _token_cache = {}  # token -> (uid, expires_at)
