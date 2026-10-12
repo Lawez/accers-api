@@ -13,6 +13,10 @@ app.register_blueprint(coach)
 from videos import videos
 app.register_blueprint(videos)
 
+# Push notifications for chat, kudos and comments (/notify), via Firebase Cloud Messaging
+from notify import notify
+app.register_blueprint(notify)
+
 def predict_exercise_intensity(user_input):
     # Load the trained model
     with open('kitale_model.pkl', 'rb') as file:
